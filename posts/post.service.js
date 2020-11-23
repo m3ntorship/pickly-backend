@@ -84,7 +84,7 @@ exports.postService = {
         author: user._id,
         isAnonymous: isAnonymousBoolean
       });
-      
+
       user.posts.push(post._id);
       user.save();
 

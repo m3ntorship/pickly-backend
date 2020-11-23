@@ -7,5 +7,5 @@ exports.getPost = postService.get();
 exports.createPost = postService.create();
 exports.deletePost = postService.delete();
 exports.getAllPosts = postService.getAll({
-	getRecentFirst: true,
+  getRecentFirst: true
 });

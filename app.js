@@ -9,6 +9,7 @@ const imageRouter = require('./images/image.routes');
 const userRouter = require('./users/user.routes');
 const voteRouter = require('./votes/vote.routes');
 const feedbackRouter = require('./feedbacks/feedback.routes');
+const reportRouter = require('./reports/reports.routes');
 const { protector } = require('./users/user.controller');
 const errorHandler = require('./middleware/errorhandler');
 const swaggerUi = require('swagger-ui-express');
@@ -49,6 +50,7 @@ app.use('/posts', postRouter);
 app.use('/images', imageRouter);
 app.use('/users', userRouter);
 app.use('/feedbacks', feedbackRouter);
+app.use('/reports', reportRouter);
 
 app.use(
   expressWinston.errorLogger({

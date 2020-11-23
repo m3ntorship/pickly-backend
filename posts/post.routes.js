@@ -5,13 +5,13 @@ const imageController = require('../images/image.controller');
 const router = express.Router();
 
 router
-	.route('/')
-	.post(imageController.uploadImage, postController.createPost)
-	.get(postController.getAllPosts);
+  .route('/')
+  .post(imageController.uploadImage, postController.createPost)
+  .get(postController.getAllPosts);
 
 router
-	.route('/:id')
-	.get(postController.getPost)
-	.delete(postController.deletePost);
+  .route('/:id')
+  .get(postController.getPost)
+  .delete(postController.deletePost);
 
 module.exports = router;
